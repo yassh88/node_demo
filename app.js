@@ -1,1 +1,4 @@
-console.log('Hi Yashwant')
+ 
+var myEmitter  = require('./events')
+
+myEmitter.emit('someEvent','yooyyyy');
