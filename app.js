@@ -1,9 +1,11 @@
- 
-var fs  = require('fs');
+var http =  require('http');
 
-// var data = fs.readFileSync('./read.txt', 'utf8');
-var data = fs.readFile('./read.txt', 'utf8', function(err,data){
-  console.log(data);
+var server = http.createServer(function(req, res){
+    console.log('request made', req.url)
+    res.writeHead(200,{'Content-Type': 'text/plain'})
+    res.end('Hi Jone, how are you')
 });
 
-//fs.writeFileSync('./write.txt', data);
+server.listen(3000, '127.0.0.1');
+
+console.log('node is listening ')
