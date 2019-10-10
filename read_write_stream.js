@@ -8,3 +8,6 @@ myReadStream.on('data', function(chunk){
   console.log('new chunk received:')
   myWriteStream.write(chunk)
 })
+
+
+// myReadStream.pipe(myWriteStream) write data automatically move readstream data in wirtestream
