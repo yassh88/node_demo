@@ -7,3 +7,9 @@ var data = fs.readFile('./read.txt', 'utf8', function(err,data){
 });
 
 //fs.writeFileSync('./write.txt', data);
+
+console.log(data);
+
+// fs.mkdir('mydir');
+// fs.mkdirSync('mydir')
+// fs.writeFileSync('./mydir/write.txt', data);

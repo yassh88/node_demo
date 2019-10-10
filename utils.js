@@ -21,3 +21,7 @@ people.forEach(function(person){
 })
 
 module.exports = {james,marry, yash, jhone}
+
+
+// var {james,marry, yash, jhone}  = require('./utils')
+// marry.emit('speak','hi dude how are you?');
