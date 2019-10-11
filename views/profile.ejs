@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body{
+      background: skyblue;
+      color: #fff;
+      font-family: verdana;
+      padding: 30px;
+    }
+    h1{
+      font-size: 48px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+    h1{
+      font-size: 43px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+    p,li{
+      font-size: 18px;
+      text-align: center;
+    }
+  </style>
+</head>
+  <body>
+    <% include partials/nav.ejs %>
+    <h1> Welcome to my web site<h1>
+    <p> Welcome to profile of <%= person %></p>
+    <p> <strong>Age: </strong> <%= data.age %></p>
+    <p> <strong>Job: </strong> <%= data.job %></p>
+    <h2>Hobbies</h2>
+    <ul>
+      <% hobbies.forEach(item=>{%>
+        <li><%= item %> </li>
+       <%}) %>
+    </ul>
+  </body>
+</html>
